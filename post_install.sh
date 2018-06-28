@@ -11,6 +11,8 @@ mv /root/SABnzbd* /root/SABnzbd
 
 chmod +x /etc/rc.d/sabnzbd
 
+sed -i '' -e 's,#!/usr/bin/python,#!/usr/local/bin/python2.7,g' /root/SABnzbd/SABnzbd.py
+
 sysrc 'sabnzbd_enable=YES'
 
 service sabnzbd start
