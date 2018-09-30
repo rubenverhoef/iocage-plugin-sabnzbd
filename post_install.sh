@@ -14,4 +14,4 @@ chmod +x /etc/rc.d/sabnzbd
 
 sysrc 'sabnzbd_enable=YES'
 
-#service sabnzbd start
+service sabnzbd start
