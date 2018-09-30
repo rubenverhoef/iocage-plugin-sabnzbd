@@ -10,8 +10,8 @@ tar -xvzf SABnzbd*.tar.gz -C /root
 rm SABnzbd*.tar.gz
 mv /root/SABnzbd* /root/SABnzbd
 
-#chmod +x /etc/rc.d/sabnzbd
+chmod +x /etc/rc.d/sabnzbd
 
-#sysrc 'sabnzbd_enable=YES'
+sysrc 'sabnzbd_enable=YES'
 
 #service sabnzbd start
