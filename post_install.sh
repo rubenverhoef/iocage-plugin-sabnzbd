@@ -1,9 +1,7 @@
 #!/bin/sh
 
-python2.7 -m pip install --upgrade pip
-python2.7 -m pip install cheetah
-python2.7 -m pip install cryptography
-python2.7 -m pip install sabyenc
+python3.7 -m pip install wheel
+python3.7 -m pip install -r /root/SABnzbd/requirements.txt -U
 
 cd / && curl -s https://api.github.com/repos/sabnzbd/sabnzbd/releases/latest | grep "browser_download_url.*-src.tar.gz" | cut -d : -f 2,3 | tr -d \" | wget -qi -
 tar -xvzf SABnzbd*.tar.gz -C /root
